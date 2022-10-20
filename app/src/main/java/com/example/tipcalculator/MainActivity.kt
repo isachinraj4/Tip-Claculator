@@ -92,7 +92,7 @@ fun EditNumberField(value: String, onValueChange: (String) -> Unit) {
         )
 }
 
-private fun tipAmountCalculator(billAmount: Double, rateOfPer: Double = 15.0): String {
+internal fun tipAmountCalculator(billAmount: Double, rateOfPer: Double = 15.0): String {
     val tip = rateOfPer/100 * billAmount
     return NumberFormat.getCurrencyInstance().format(tip)
 }
