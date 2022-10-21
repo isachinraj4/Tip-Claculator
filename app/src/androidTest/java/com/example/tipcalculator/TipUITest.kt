@@ -19,9 +19,9 @@ class TipUITest {
                 TipCalculator()
             }
         }
-        composeTestRule.onNodeWithText("Cost of Service")
+        composeTestRule.onNodeWithText("Enter Bill Amount")
             .performTextInput("100")
-        composeTestRule.onNodeWithText("Tip (%)").performTextInput("15")
-        composeTestRule.onNodeWithText("Tip Amount: $15.00").assertExists()
+        composeTestRule.onNodeWithText("Tip Amount: $15.00")
+            .assertExists()
     }
 }
